@@ -1,0 +1,33 @@
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../../bower_components/paper-styles/paper-styles.html">
+
+<dom-module id='paper-subheader'>
+
+	<template>
+		<style>
+			:host {
+				opacity: var(--dark-secondary-opacity);
+				padding: 0 16px;
+				min-height: 40xp;
+				display: block;
+				@apply(--layout-horizontal);
+				@apply(--layout-center);
+				@apply(--paper-font-body1);
+			}
+		</style>
+		
+		<content></content>
+	</template>
+</dom-module>
+
+<script>
+
+(function() {
+
+	Polymer({
+		is: 'paper-subheader'
+	});
+
+})();
+
+</script>

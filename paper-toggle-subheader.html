@@ -1,0 +1,55 @@
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../../../bower_components/paper-styles/paper-styles.html">
+
+<dom-module id='paper-toggle-subheader'>
+
+	<template>
+		<style>
+			:host {
+				opacity: var(--dark-secondary-opacity);
+				padding: 0 16px;
+				min-height: 40xp;
+				@apply(--layout-horizontal);
+				@apply(--layout-center);
+				@apply(--paper-font-body1);
+			}
+		</style>
+		
+		<div class='flex'><content></content></div>
+		<paper-icon-button on-tap='_toggle' icon=[[_icon]] hidden=[[!_icon]]></paper-icon-button>
+	</template>
+</dom-module>
+
+<script>
+
+(function() {
+
+	Polymer({
+		is: 'paper-toggle-subheader',
+		properties: {
+			active: {
+				type: Boolean,
+				value: false,
+				notify: true
+			},
+			iconActive: String,
+			iconInactive: String,
+			_icon: {
+				type: String,
+				computed: '_computeIcon(active,iconActive,iconInactive)'
+			}
+		},
+		
+		// Private methods
+		_toggle: function() {
+			this.active = !this.active;
+		},
+		_computeIcon: function(active,iconActive,iconInactive) {
+			return active ? iconActive : iconInactive;
+		}
+	});
+
+})();
+
+</script>
