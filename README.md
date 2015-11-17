@@ -31,6 +31,11 @@ Property   | Type    | Description
 **active** | Boolean | Flag if the toggle is active
 
 
+## Continuous integration
+
+[Travis-CI](https://travis-ci.org/Collaborne/paper-subheader) [![Travis state](https://travis-ci.org/Collaborne/paper-subheader.svg?branch=master)](https://travis-ci.org/Collaborne/paper-subheader)
+
+
 ## License
 
     This software is licensed under the Apache 2 license, quoted below.
