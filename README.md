@@ -16,7 +16,7 @@ paper-subheader [![Bower version](https://badge.fury.io/bo/paper-subheader.svg)]
   icon-inactive='help-outline'
   icon-active='close'>
   Sub header with toggle icon
- </paper-toggle-subheader>
+</paper-toggle-subheader>
 
 <paper-subheader>Sub header without icon</paper-toggle-subheader>
 ```
