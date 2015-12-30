@@ -1,3 +1,6 @@
+_[Demo and API Docs](http://collaborne.github.io/paper-subheader)_
+
+
 paper-subheader [![Bower version](https://badge.fury.io/bo/paper-subheader.svg)](http://badge.fury.io/bo/paper-subheader) [![Travis state](https://travis-ci.org/Collaborne/paper-subheader.svg?branch=master)](https://travis-ci.org/Collaborne/paper-subheader)
 =========
 
@@ -6,29 +9,9 @@ paper-subheader [![Bower version](https://badge.fury.io/bo/paper-subheader.svg)]
 ![Screenshot](/doc/screenshot.png "Screenshot")
 
 
-## Usage
+To use the element:
 
 `bower install paper-subheader`
-
-```html
-<paper-toggle-subheader
-  active={{showHelp}}
-  icon-inactive='help-outline'
-  icon-active='close'>
-  Sub header with toggle icon
-</paper-toggle-subheader>
-
-<paper-subheader>Sub header without icon</paper-toggle-subheader>
-```
-
-
-## Properties
-
-These properties are available for `paper-toggle-subheader`:
-
-Property   | Type    | Description
----------- | ------- | ----------------------------
-**active** | Boolean | Flag if the toggle is active
 
 
 ## License

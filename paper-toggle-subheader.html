@@ -3,6 +3,24 @@
 <link rel="import" href="../paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../paper-styles/paper-styles.html">
 
+<!--
+A Material Design sub headers that can be toggle between active and inactive state.
+
+### Example
+
+```html
+<paper-toggle-subheader
+  active={{showHelp}}
+  icon-inactive='help-outline'
+  icon-active='close'>
+  Sub header with toggle icon
+</paper-toggle-subheader>
+
+<paper-subheader>Sub header without icon</paper-toggle-subheader>
+```
+
+@demo demo/index.html
+-->
 <dom-module id='paper-toggle-subheader'>
 
 	<template>
@@ -20,6 +38,7 @@
 		<div class='flex'><content></content></div>
 		<paper-icon-button on-tap='_toggle' icon=[[_icon]] hidden=[[!_icon]]></paper-icon-button>
 	</template>
+	
 </dom-module>
 
 <script>
@@ -29,13 +48,25 @@
 	Polymer({
 		is: 'paper-toggle-subheader',
 		properties: {
+			/**
+			 * True if the toggle is active
+			 */
 			active: {
 				type: Boolean,
 				value: false,
 				notify: true
 			},
+			
+			/**
+			 * Icon that is shown if the element is in active state
+			 */
 			iconActive: String,
+
+			/**
+			 * Icon that is shown if the element is in inactive state
+			 */
 			iconInactive: String,
+			
 			_icon: {
 				type: String,
 				computed: '_computeIcon(active,iconActive,iconInactive)'
