@@ -37,10 +37,10 @@
 					test('Tap toggles the active property', function() {
 						element.active = false;
 
-						MockInteractions.tap(element.$.button);
+						MockInteractions.tap(element.$.togglebutton);
 						expect(element.active).to.be.eql(true);
 
-						MockInteractions.tap(element.$.button);
+						MockInteractions.tap(element.$.togglebutton);
 						expect(element.active).to.be.eql(false);
 					});
 				});
