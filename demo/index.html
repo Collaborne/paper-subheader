@@ -9,20 +9,23 @@
 	</head>
 
 	<body>
-		<template is="dom-bind">
-			<paper-toggle-subheader icon-inactive="help-outline" icon-active="close" on-toggle-active="_onActive" on-toggle-inactive="_onInactive">Sub header with toggle icon</paper-toggle-subheader>
+		<dom-bind>
+			<template>
+				<paper-toggle-subheader
+					icon-inactive="help-outline"
+					icon-active="close"
+					on-toggle-active="_onActive"
+					on-toggle-inactive="_onInactive"
+				>Sub header with toggle icon</paper-toggle-subheader>
 
-			<paper-subheader>Sub header without icon</paper-subheader>
-		</template>
+				<paper-subheader>Sub header without icon</paper-subheader>
 
-		<script>
-			var scope = document.querySelector("template[is=dom-bind]");
-			scope._onActive = function() {
-				alert('Toggled to active');
-			};
-			scope._onInactive = function() {
-				alert('Toggled to inactive');
-			};
-		</script>
+				<script>
+					var scope = document.querySelector("dom-bind");
+					scope._onActive = () => alert('Toggled to active');
+					scope._onInactive = () => alert('Toggled to inactive');
+				</script>
+			</template>
+		</dom-bind>
 	</body>
 </html>

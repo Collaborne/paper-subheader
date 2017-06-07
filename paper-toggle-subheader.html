@@ -1,5 +1,6 @@
 <!doctype html>
 <link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-flex-layout/iron-flex-layout-classes.html">
 <link rel="import" href="../iron-icon/iron-icon.html">
 <link rel="import" href="../paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../paper-styles/paper-styles.html">
@@ -23,15 +24,15 @@ A Material Design sub headers that can be toggle between active and inactive sta
 <dom-module id="paper-toggle-subheader">
 
 	<template>
-		<style>
+		<style include="iron-flex">
 			:host {
 				color: var(--secondary-text-color);
 				padding: 0 16px;
 				min-height: 40px;
 				height: 40px;
-				@apply(--layout-horizontal);
-				@apply(--layout-center);
-				@apply(--paper-font-body1);
+				@apply --layout-horizontal;
+				@apply --layout-center;
+				@apply --paper-font-body1;
 				cursor: default;
 			}
 		</style>
@@ -50,16 +51,16 @@ A Material Design sub headers that can be toggle between active and inactive sta
 		is: 'paper-toggle-subheader',
 		properties: {
 			/**
-	         * Fired when the user toggles from the inactive to the active state.
-	         *
-	         * @event toggle-active
-	         */
+			 * Fired when the user toggles from the inactive to the active state.
+			 *
+			 * @event toggle-active
+			 */
 
 			 /**
- 	         * Fired when the user toggles from the active to the inactive state.
- 	         *
- 	         * @event toggle-inactive
- 	         */
+ 			 * Fired when the user toggles from the active to the inactive state.
+ 			 *
+ 			 * @event toggle-inactive
+ 			 */
 
 			/**
 			 * True if the toggle is active
@@ -92,7 +93,7 @@ A Material Design sub headers that can be toggle between active and inactive sta
 
 			this.fire(this.active ? 'toggle-active' : 'toggle-inactive');
 		},
-		_computeIcon: function(active,iconActive,iconInactive) {
+		_computeIcon: function(active, iconActive, iconInactive) {
 			return active ? iconActive : iconInactive;
 		}
 	});
