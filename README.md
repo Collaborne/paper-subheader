@@ -23,8 +23,9 @@ To use the element:
 ```html
 <paper-toggle-subheader
     icon-inactive="icons:help-outline"
-    icon-active="icons:close"
->Sub header with toggle icon</paper-toggle-subheader>
+    icon-active="icons:close">
+    Sub header with toggle icon
+</paper-toggle-subheader>
 ```
 
 
