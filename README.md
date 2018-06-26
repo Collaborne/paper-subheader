@@ -1,4 +1,7 @@
 paper-subheader [![Bower version](https://badge.fury.io/bo/paper-subheader.svg)](http://badge.fury.io/bo/paper-subheader) [![Travis state](https://travis-ci.org/Collaborne/paper-subheader.svg?branch=master)](https://travis-ci.org/Collaborne/paper-subheader) [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/Collaborne/paper-subheader)
+
+[![Published on Vaadin  Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/Collabornepaper-subheader)
+[![Stars on vaadin.com/directory](https://img.shields.io/vaadin-directory/star/Collabornepaper-subheader.svg)](https://vaadin.com/directory/component/Collabornepaper-subheader)
 =========
 
 `paper-subheader` provides Material Design sub headers. The web component is built with [Polymer](https://www.polymer-project.org).
